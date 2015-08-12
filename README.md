@@ -7,13 +7,14 @@ CodeEv is a project designed during and for the Django Mentoring initiative, whe
 * fork the repo
 * run:
 ```
-pip install -r requirements.txt
+pip install -r requirements/dev.txt
 ```
 * for development we will be using sqlite3 for the database, which is already
   set up in the settings.py file. In order to create it on you local just run
 ```
 python manage.py migrate
 ```
+* make sure you install python3
 
 **Contributing**
 * fork repo
