@@ -4,7 +4,7 @@ from django.forms.models import ChoiceField
 # Create the models projects
 
 
-class Projects(models.Model):
+class Project(models.Model):
     title = models.CharField(max_length=200)
     owner = models.ForeignKey('auth.User', related_name='owns_project')
     description = models.TextField()
