@@ -1,4 +1,4 @@
-# codeev
+# codeeve
 **Description**
 
 CodeEv is a project designed during and for the Django Mentoring initiative, where one can upload a project is working on and also can find projects to contribute to. Is also aimed to be a tool for organizing events for the initiative.
@@ -19,7 +19,7 @@ python manage.py migrate
 **Contributing**
 * fork repo
 * clone locally the fork
-* add this repo as upstream (git add upstream git@github.com:luminitacristinalazarescu/codeev.git)
+* add this repo as upstream (git add upstream git@github.com:luminitacristinalazarescu/codeeve.git)
 * work on a branch
-* make pull request (PR) against master branch of git@github.com:luminitacristinalazarescu/codeev.git
+* make pull request (PR) against master branch of git@github.com:luminitacristinalazarescu/codeeve.git
 
