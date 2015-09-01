@@ -1,7 +1,11 @@
-from django.shortcuts import render
 from .models import Project
 
+from django.views.generic.list import ListView
 
-def list_projects(request):
-    projects = Project.objects.all()
-    return render(request, 'projects/list_projects.html', {'projects': projects})
+
+class ProjectListView(ListView):
+    model = Project
+
+    def get_context_data(self, **kwargs):
+        context = super(ProjectListView, self).get_context_data(**kwargs)
+        return context

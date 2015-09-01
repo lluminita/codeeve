@@ -1,9 +1,9 @@
 from django.conf.urls import url
 
-from . import views
+from projects.views import ProjectListView
 
 
 urlpatterns = [
 
-    url(r'^$', views.list_projects, name='list_projects')
+    url(r'^$', ProjectListView.as_view(), name='list_projects')
 ]
