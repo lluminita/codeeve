@@ -20,7 +20,7 @@ class Project(models.Model):
     participants = models.ManyToManyField('auth.User', related_name='participant_of_projects',
                                           blank=True)
     coach = models.ForeignKey('auth.User', related_name='coach_of_projects', null=True, blank=True)
-    created_date = models.DateTimeField(default=timezone.now)
+    created_at = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return self.title

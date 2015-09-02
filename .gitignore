@@ -1,2 +1,4 @@
 *.py[cod]
 *.sqlite3
+*.swp
+*.json
