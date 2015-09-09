@@ -1,0 +1,17 @@
+<html>                                                                          
+<body>                                                                          
+<h2>A list of projects</h2>
+
+{% for project in object_list %}
+
+<div>
+     <h2><a href="">{{ project.title }}</a></h2>
+     <p>{{ project.created_at }}</p>
+     <p>{{ project.difficulty }}</p>
+     <p>{{ project.description|linebreaks }}</p>
+ </div>
+
+{% endfor %}
+
+</body>                                                                         
+</html
