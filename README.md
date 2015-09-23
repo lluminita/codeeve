@@ -1,7 +1,11 @@
 # codeeve
+
+[![Requirements
+Status](https://requires.io/github/luminitacristinalazarescu/codeeve/requirements.svg?branch=master)](https://requires.io/github/luminitacristinalazarescu/codeeve/requirements/?branch=master)
+
 **Description**
 
-CodeEv is a project designed during and for the Django Mentoring initiative, where one can upload a project is working on and also can find projects to contribute to. Is also aimed to be a tool for organizing events for the initiative.
+CodeEve is a project designed during and for the Django Mentoring initiative, where one can upload a project is working on and also can find projects to contribute to. Is also aimed to be a tool for organizing events for the initiative.
 
 **Installation**
 * fork the repo
