@@ -64,7 +64,7 @@
         <!-- /.container -->
     </nav>
 
-
+    {% block header %}
     <!-- Header -->
     <a name="about"></a>
     <div class="intro-header">
@@ -96,7 +96,8 @@
 
     </div>
     <!-- /.intro-header -->
-
+    {% endblock %}
+    {% block content %}
     <!-- Page Content -->
 
 	<a  name="services"></a>
@@ -108,7 +109,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Find a project</h2>
-                    <p class="lead">Check out <a target="_blank" href="projects/">ongoing projects</a> that sick out participants and choose the idea and technology you want to work on.</p>
+                    <p class="lead">Check out <a href="projects/">ongoing projects</a> that sick out participants and choose the idea and technology you want to work on.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="/static/img/ipad-python.png" alt="">
@@ -164,7 +165,7 @@
 
     </div>
     <!-- /.content-section-a -->
-
+    {% endblock %}
 	<a  name="contact"></a>
     <div class="banner">
 

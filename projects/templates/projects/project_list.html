@@ -1,17 +1,35 @@
-<html>                                                                          
-<body>                                                                          
-<h2>A list of projects</h2>
+{% extends "codeeve/index.html" %}
 
+{% block header %}
+{% endblock %}
+
+{% block content %}
 {% for project in object_list %}
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ project.title }}</h2>
+                    <p>{{ project.created_at }}</p>
+                    <p>{{ project.difficulty }}</p>
+                    <p>{{ project.description}}</p>
+                    <p class="lead">Check out <a href="projects/">ongoing projects</a> that sick out participants and choose the idea and technology you want to work on.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="/static/img/ipad-python.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
 
 <div>
-     <h2><a href="">{{ project.title }}</a></h2>
-     <p>{{ project.created_at }}</p>
-     <p>{{ project.difficulty }}</p>
-     <p>{{ project.description|linebreaks }}</p>
  </div>
 
 {% endfor %}
-
-</body>                                                                         
-</html
+{% endblock %}
