@@ -14,9 +14,17 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">{{ project.title }}</h2>
                     <p>{{ project.created_at }}</p>
-                    <p>{{ project.difficulty }}</p>
+                    <div
+                      {% if project.difficulty == "beginner" %}
+                         class = glossy-beginner
+                      {% elif project.difficulty == "intermediate" %}
+                         class = glossy-intermediate
+                      {% elif project.difficulty == "advanced" %}
+                         class = glossy-advanced
+                      {% endif %}
+                    <p> {{ project.difficulty }}</p> </div>
                     <p>{{ project.description}}</p>
-                    <p class="lead">Check out <a href="projects/">ongoing projects</a> that sick out participants and choose the idea and technology you want to work on.</p>
+                  <!--  <p class="lead">Check out <a href="projects/">ongoing projects</a> that sick out participants and choose the idea and technology you want to work on.</p> -->
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="/static/img/ipad-python.png" alt="">
