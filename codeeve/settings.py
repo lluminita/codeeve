@@ -118,3 +118,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 SITE_ID = 1
 ACCOUNT_LOGIN_REDIRECT_URL = '/projects'
+ACCOUNT_LOGOUT_ON_GET = True
