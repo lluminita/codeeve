@@ -10,6 +10,6 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^accounts/', include('allauth.urls')),
-    url(r'^$', TemplateView.as_view(template_name='codeeve/index.html')),
-    url(r'^projects/', include('projects.urls'))
+    url(r'^$', TemplateView.as_view(template_name='codeeve/index.html'), name='home'),
+    url(r'^projects/', include('projects.urls')),
 ]
