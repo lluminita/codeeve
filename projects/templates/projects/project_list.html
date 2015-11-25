@@ -21,13 +21,19 @@
                          class = glossy-intermediate
                       {% elif project.difficulty == "advanced" %}
                          class = glossy-advanced
-                      {% endif %}
+                      {% endif %}>
                     <p> {{ project.difficulty }}</p> </div>
                     <p>{{ project.description}}</p>
+                    {% if project.max_members > project.participants.count %}
+                       <button type="button"> Join!</button>
+                    {% endif %}
                   <!--  <p class="lead">Check out <a href="projects/">ongoing projects</a> that sick out participants and choose the idea and technology you want to work on.</p> -->
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="/static/img/ipad-python.png" alt="">
+                  <hr class="section-heading-spacer">
+                  <div class="clearfix"></div>
+                    <!--<img class="img-responsive" src="/static/img/ipad-python.png" alt="" >!-->
+                  <img src = "{{project.image.url}}">
                 </div>
             </div>
 
