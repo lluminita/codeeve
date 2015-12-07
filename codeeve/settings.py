@@ -14,6 +14,9 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MEDIA_ROOT = BASE_DIR + "/media/"
+MEDIA_URL = '/media/'
+
 
 
 # Quick-start development settings - unsuitable for production
