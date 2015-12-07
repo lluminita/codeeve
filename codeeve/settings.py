@@ -17,8 +17,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MEDIA_ROOT = BASE_DIR + "/media/"
 MEDIA_URL = '/media/'
 
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -129,7 +127,7 @@ ACCOUNT_LOGOUT_ON_GET = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_ROOT = 'staticfiles'
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'

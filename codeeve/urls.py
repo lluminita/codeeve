@@ -15,4 +15,6 @@ urlpatterns = [
     url(r'^projects/', include('projects.urls')),
 ]
 if settings.DEBUG:
-  urlpatterns.append(url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}))
+    urlpatterns.append(url(r'^media/(?P<path>.*)$',
+                           'django.views.static.serve',
+                           {'document_root': settings.MEDIA_ROOT}))

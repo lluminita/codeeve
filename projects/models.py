@@ -21,7 +21,7 @@ class Project(models.Model):
                                           blank=True)
     coach = models.ForeignKey('auth.User', related_name='coach_of_projects', null=True, blank=True)
     created_at = models.DateTimeField(default=timezone.now)
-    image = models.ImageField(upload_to='uploads/%Y/%m/%d/', blank=True, null = True)
+    image = models.ImageField(upload_to='uploads/%Y/%m/%d/', blank=True, null=True)
 
     def __str__(self):
         return self.title
