@@ -1,5 +1,6 @@
 {% load socialaccount %}
 {% load account %}
+{% load staticfiles %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -112,7 +113,7 @@
                     <p class="lead">Check out <a href="projects/">ongoing projects</a> that sick out participants and choose the idea and technology you want to work on.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="/static/img/ipad-python.png" alt="">
+                    <img class="img-responsive" src="{% static 'img/ipad-python.png'%}" alt="">
                 </div>
             </div>
 
@@ -134,7 +135,7 @@
                     <p class="lead">Submit a project you always wanted to do and find motivated collaborator to make it happen!</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="/static/img/mac-connect.png" alt="">
+                    <img class="img-responsive" src="{% static 'img/mac-connect.png'%}" alt="">
                 </div>
             </div>
 
