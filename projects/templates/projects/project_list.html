@@ -13,7 +13,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">{{ project.title }}</h2>
-                    <p>{{ project.created_at }}</p>
+                    <p>{{ project.created_at|date:"D d M Y"  }}</p>
                     <div
                       {% if project.difficulty == "beginner" %}
                          class = glossy-beginner
