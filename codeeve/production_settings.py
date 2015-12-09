@@ -1,4 +1,4 @@
-from codeeve.settings import DATABASES
+from codeeve.settings import *  # noqa
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
 
