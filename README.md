@@ -23,7 +23,7 @@ python manage.py migrate
 **Contributing**
 * fork repo
 * clone locally the fork
-* add this repo as upstream (git add upstream git@github.com:lluminita/codeeve.git)
+* add this repo as upstream (git add upstream https://github.com/lluminita/codeeve.git)
 * work on a branch
-* make pull request (PR) against master branch of git@github.com:lluminita/codeeve.git
+* make pull request (PR) against master branch of https://github.com/lluminita/codeeve.git
 
