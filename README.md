@@ -1,7 +1,7 @@
 # codeeve
 
 [![Requirements
-Status](https://requires.io/github/luminitacristinalazarescu/codeeve/requirements.svg?branch=master)](https://requires.io/github/luminitacristinalazarescu/codeeve/requirements/?branch=master)
+Status](https://requires.io/github/lluminita/codeeve/requirements.svg?branch=master)](https://requires.io/github/lluminita/codeeve/requirements/?branch=master)
 
 **Description**
 
