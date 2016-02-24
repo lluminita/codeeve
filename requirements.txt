@@ -3,6 +3,7 @@ argparse==1.2.1
 decorator==4.0.2
 dj-database-url==0.3.0
 django-allauth==0.23.0
+django-debug-toolbar==1.4
 gunicorn==19.3.0
 oauthlib==1.0.3
 path.py==7.6
