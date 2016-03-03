@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+DEVELOPMENT_ENV = True
 
 # Application definition
 
@@ -43,10 +44,12 @@ INSTALLED_APPS = (
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
-    'debug_toolbar',
     'codeeve',
     'projects',
 )
+
+if DEVELOPMENT_ENV:
+    INSTALLED_APPS += ('debug_toolbar',)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
