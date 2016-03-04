@@ -18,7 +18,7 @@ pip install -r requirements/dev.txt
 ```
 python manage.py migrate
 ```
-* make sure you install python3
+* for this project we will use python3
 
 **Contributing**
 * fork repo
