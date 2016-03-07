@@ -4,11 +4,12 @@
 {% endblock %}
 
 {% block content %}
-{% for project in object_list %}
     <div class="content-section-a">
 
         <div class="container">
             <div class="row">
+                <a href="create/">Create a project</a>
+                {% for project in object_list %}
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
@@ -29,12 +30,16 @@
                     {% endif %}
                   <!--  <p class="lead">Check out <a href="projects/">ongoing projects</a> that sick out participants and choose the idea and technology you want to work on.</p> -->
                 </div>
+
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                   <hr class="section-heading-spacer">
                   <div class="clearfix"></div>
                     <!--<img class="img-responsive" src="/static/img/ipad-python.png" alt="" >!-->
-                  <img src = "{{project.image.url}}">
+                  {% if project.image %}
+                    <img src = "{{project.image.url}}">
+                  {% endif %}
                 </div>
+                {% endfor %}
             </div>
 
         </div>
@@ -45,5 +50,4 @@
 <div>
  </div>
 
-{% endfor %}
 {% endblock %}
