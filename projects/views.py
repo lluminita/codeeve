@@ -6,15 +6,13 @@ from .models import Project
 
 
 class ProjectCreate(CreateView):
-    template_name = 'projects/create_project.html'
     model = Project
     fields = ['title', 'description', 'max_members', 'difficulty',
-              'image', 'participants', 'coach']
+              'image', 'participants', 'coach', 'owner']
     success_url = reverse_lazy('project_list')
 
 
 class ProjectUpdate(UpdateView):
-    template_name = 'projects/update_project.html'
     model = Project
     fields = ['title', 'description', 'max_members', 'difficulty',
               'image', 'participants', 'coach']

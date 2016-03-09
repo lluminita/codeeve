@@ -14,15 +14,9 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">{{ project.title }}</h2>
-                    <div
-                      {% if project.difficulty == "beginner" %}
-                         class = glossy-beginner
-                      {% elif project.difficulty == "intermediate" %}
-                         class = glossy-intermediate
-                      {% elif project.difficulty == "advanced" %}
-                         class = glossy-advanced
-                      {% endif %}>
-                    <p> {{ project.difficulty }}</p> </div>
+                    <div class="glossy-{{ project.difficulty }}">
+                    <p> {{ project.difficulty }}</p> 
+                    </div>
                     <a href="{% url 'project_details' pk=project.pk %}">Details</a>
                     {% if project.max_members > project.participants.count %}
                        <button type="button"> Join!</button>
