@@ -7,13 +7,15 @@
     <div class="content-section-a">
 
         <div class="container">
-            <a href="create/">Create a project</a>
-            {% for project in object_list %}
             <div class="row">
+                <a href="/projects/">Go to list all projects</a>
+                <a href="update/">Update the project</a>
+                <a href="delete/">Delete the project</a>
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">{{ project.title }}</h2>
+                    <p>{{ project.created_at|date:"D d M Y"  }}</p>
                     <div
                       {% if project.difficulty == "beginner" %}
                          class = glossy-beginner
@@ -22,8 +24,9 @@
                       {% elif project.difficulty == "advanced" %}
                          class = glossy-advanced
                       {% endif %}>
-                    <p> {{ project.difficulty }}</p> </div>
-                    <a href="{% url 'project_details' pk=project.pk %}">Details</a>
+                        <p> {{ project.difficulty }}</p>
+                    </div>
+                    <p>{{ project.description}}</p>
                     {% if project.max_members > project.participants.count %}
                        <button type="button"> Join!</button>
                     {% endif %}
@@ -37,7 +40,6 @@
                   {% endif %}
                 </div>
             </div>
-            {% endfor %}
 
         </div>
 
