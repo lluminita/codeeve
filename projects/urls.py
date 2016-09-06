@@ -8,13 +8,13 @@ urlpatterns = [
     url(r'^$',
         ProjectListView.as_view(),
         name='project_list'),
+    url(r'^details/(?P<pk>\d+)/update/$',
+        ProjectUpdate.as_view(),
+        name='project_update'),
     url(r'^details/(?P<pk>\d+)/$',
         ProjectDetailView.as_view(),
         name='project_details'),
     url(r'^create/$',
         ProjectCreate.as_view(),
-        name='project_create'),
-    url(r'^details/(?P<pk>\d+)/update/$',
-        ProjectUpdate.as_view(),
-        name='project_update'),
+        name='project_create')
 ]
